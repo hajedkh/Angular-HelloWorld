@@ -8,7 +8,7 @@ RUN npm run build --prod
 
 FROM nginx:latest
 
-COPY --from=build /app/dist/Angular-HelloWorld /usr/share/nginx/html
+COPY --from=build /app/dist/angular-hello-world /usr/share/nginx/html
 
 EXPOSE 80
 
