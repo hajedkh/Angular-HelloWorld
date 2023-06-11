@@ -9,3 +9,6 @@ spec:
         - image: ttl.sh/angular:2h
           ports:
             - containerPort: 80
+          env:
+            - name: TARGET
+              value: "World"
