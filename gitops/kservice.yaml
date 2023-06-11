@@ -1,1 +1,11 @@
-
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: angular
+spec:
+  template:
+    spec:
+      containers:
+        - image: ttl.sh/angular:2h
+          ports:
+            - containerPort: 80
