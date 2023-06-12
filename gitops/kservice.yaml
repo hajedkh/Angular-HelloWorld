@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - image: ttl.sh/angular:2h
+        - image: ttl.sh/angularapp:2h
           ports:
             - containerPort: 80
           env:
